@@ -619,26 +619,12 @@ function performSearch(nis) {
     // Scroll to results smoothly on mobile
     resultArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
-    // Highlight active row in table if it exists
-    document.querySelectorAll("#student-table-body tr").forEach(row => {
-      if (row.getAttribute("data-nis") === student.nis) {
-        row.classList.add("selected-row");
-      } else {
-        row.classList.remove("selected-row");
-      }
-    });
-    
   } else {
     // Hide results
     resultArea.classList.add("hidden");
     // Show error
     errorArea.classList.remove("hidden");
     errorArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    
-    // Remove active highlight in table
-    document.querySelectorAll("#student-table-body tr").forEach(row => {
-      row.classList.remove("selected-row");
-    });
   }
 }
 
@@ -654,113 +640,4 @@ searchInput.addEventListener("keypress", (e) => {
 // Auto-tugas filter typing numbers only
 searchInput.addEventListener("input", (e) => {
   searchInput.value = searchInput.value.replace(/[^0-9]/g, '');
-});
-
-// ==========================================
-// Student Directory & Interactive Table Logic
-// ==========================================
-
-const tableBody = document.getElementById("student-table-body");
-const tableSearch = document.getElementById("table-search");
-const filterJurusan = document.getElementById("filter-jurusan");
-const filterOrisinalitas = document.getElementById("filter-orisinalitas");
-
-// Helper to map status to CSS badge pill class
-function getPillClass(status) {
-  if (status === "Murni Murid") return "pill-murni";
-  if (status === "Campuran" || status === "Salin Panduan" || status === "Campuran/Salin Panduan") return "pill-campuran";
-  return "pill-plagiat";
-}
-
-// Function to render the student list table
-function renderStudentTable() {
-  const searchQuery = tableSearch.value.trim().toLowerCase();
-  const jurusanVal = filterJurusan.value;
-  const orisinalitasVal = filterOrisinalitas.value;
-  
-  // Filter database
-  const filtered = studentDatabase.filter(student => {
-    // 1. Search filter (by NIS)
-    const matchSearch = student.nis.toLowerCase().includes(searchQuery);
-    
-    // 2. Jurusan filter
-    let matchJurusan = true;
-    if (jurusanVal !== "ALL") {
-      matchJurusan = student.jurusan.toUpperCase().includes(jurusanVal);
-    }
-    
-    // 3. Orisinalitas filter
-    let matchOrisinalitas = true;
-    if (orisinalitasVal !== "ALL") {
-      if (orisinalitasVal === "Campuran/Salin Panduan") {
-        matchOrisinalitas = (student.kategoriEtika === "Campuran" || student.kategoriEtika === "Salin Panduan" ||
-                             student.kategoriPrompt === "Campuran" || student.kategoriPrompt === "Salin Panduan");
-      } else {
-        matchOrisinalitas = (student.kategoriEtika === orisinalitasVal || student.kategoriPrompt === orisinalitasVal);
-      }
-    }
-    
-    return matchSearch && matchJurusan && matchOrisinalitas;
-  });
-  
-  // Clear body
-  tableBody.innerHTML = "";
-  
-  if (filtered.length === 0) {
-    tableBody.innerHTML = `<tr><td colspan="6" class="text-center" style="color: var(--text-muted); padding: 2rem;">Tidak ada data siswa yang cocok dengan filter.</td></tr>`;
-    return;
-  }
-  
-  // Populate body
-  filtered.forEach(student => {
-    const tr = document.createElement("tr");
-    tr.setAttribute("data-nis", student.nis);
-    
-    // Highlight if active
-    const currentActiveNis = searchInput.value.trim();
-    if (currentActiveNis === student.nis && !resultArea.classList.contains("hidden")) {
-      tr.classList.add("selected-row");
-    }
-    
-    tr.innerHTML = `
-      <td><strong>${student.nis}</strong></td>
-      <td>${student.jurusan}</td>
-      <td class="text-center" style="font-weight: 700; color: var(--color-success);">${student.nilaiAkhir.toFixed(1)}</td>
-      <td><span class="badge-status-pill ${getPillClass(student.kategoriEtika)}">${student.kategoriEtika}</span></td>
-      <td><span class="badge-status-pill ${getPillClass(student.kategoriPrompt)}">${student.kategoriPrompt}</span></td>
-      <td class="text-center">
-        <button class="action-btn-sm" data-nis="${student.nis}">Pilih</button>
-      </td>
-    `;
-    
-    // Clicking anywhere on row selects student
-    tr.addEventListener("click", (e) => {
-      if (e.target.tagName !== "BUTTON") {
-        selectStudent(student.nis);
-      }
-    });
-    
-    // Button click handler
-    tr.querySelector(".action-btn-sm").addEventListener("click", () => {
-      selectStudent(student.nis);
-    });
-    
-    tableBody.appendChild(tr);
-  });
-}
-
-// Function to handle choosing a student
-function selectStudent(nis) {
-  searchInput.value = nis;
-  performSearch(nis);
-}
-
-// Table event listeners
-tableSearch.addEventListener("input", renderStudentTable);
-filterJurusan.addEventListener("change", renderStudentTable);
-filterOrisinalitas.addEventListener("change", renderStudentTable);
-
-// Initialize table on load
-document.addEventListener("DOMContentLoaded", () => {
-  renderStudentTable();
 });

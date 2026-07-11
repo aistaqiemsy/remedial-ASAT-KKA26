@@ -211,61 +211,7 @@
       </div>
     </section>
 
-    <!-- Student Directory Section -->
-    <section class="directory-section glass-panel">
-      <div class="directory-header">
-        <h2 class="directory-title">Direktori & Rekap Nilai Remedial</h2>
-        <p class="directory-desc">Telusuri seluruh daftar nilai remedial siswa. Klik baris siswa untuk menampilkan detail evaluasi dan umpan balik lengkap secara instan.</p>
-      </div>
 
-      <div class="filter-controls">
-        <div class="filter-search-box">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="filter-search-icon">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-          <input type="text" id="table-search" placeholder="Cari NIS..." autocomplete="off">
-        </div>
-        
-        <div class="filter-dropdowns">
-          <div class="filter-group">
-            <label for="filter-jurusan">Jurusan:</label>
-            <select id="filter-jurusan" class="filter-select">
-              <option value="ALL">Semua Jurusan</option>
-              <option value="DKV">DKV</option>
-              <option value="TJKT">TJKT</option>
-            </select>
-          </div>
-
-          <div class="filter-group">
-            <label for="filter-orisinalitas">Orisinalitas:</label>
-            <select id="filter-orisinalitas" class="filter-select">
-              <option value="ALL">Semua Kategori</option>
-              <option value="Murni Murid">Murni Murid</option>
-              <option value="Campuran/Salin Panduan">Campuran / Salin Panduan</option>
-              <option value="Copy-Paste AI">Copy-Paste AI</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-      <div class="table-scroll-container">
-        <table class="directory-table">
-          <thead>
-            <tr>
-              <th>NIS</th>
-              <th>Jurusan</th>
-              <th class="text-center">Nilai Akhir</th>
-              <th>Orisinalitas Etika</th>
-              <th>Orisinalitas Prompt</th>
-              <th class="text-center">Aksi</th>
-            </tr>
-          </thead>
-          <tbody id="student-table-body">
-            <!-- Will be populated dynamically by JS -->
-          </tbody>
-        </table>
-      </div>
-    </section>
 
     <!-- Educational & Guidelines Section -->
     <div class="info-layout-grid">
