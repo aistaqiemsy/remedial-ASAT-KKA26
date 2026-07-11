@@ -311,6 +311,201 @@ const studentDatabase = [
     kategoriPrompt: "Copy-Paste AI",
     catatanDeteksi: "Bagian 1 ditulis manual, ada typo ('mecari', 'sertacek'). Bagian 2 menyalin prompt terstruktur AI secara utuh lengkap dengan format penulisan tebal ('**') dan instruksi teknis yang rumit.",
     feedback: "Pemahaman teori etika AI ditulis sendiri dengan gaya bahasa yang sangat alami. Di bagian prompt engineering, ke depannya cobalah untuk merancang prompt dan analisis evaluasi secara mandiri menggunakan kata-kata sendiri."
+  },
+  {
+    nis: "12511192",
+    jurusan: "DKV X-2",
+    etika: 88,
+    prompt: 92,
+    evaluasi: 90,
+    karya: 90,
+    nilaiAkhir: 79.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Bagian 1 natural dengan salah ketik alami ('printah', 'efesiensi'). Bagian 2 membuat prompt RTCC mandiri dan melakukan evaluasi perbaikan slide secara detail.",
+    feedback: "Pemahaman teori etika AI kamu sudah sangat baik dan orisinal. Prompt yang kamu buat terstruktur dengan baik, serta evaluasi perbaikan slide-nya detail dan praktis. Pertahankan kerja bagus ini!"
+  },
+  {
+    nis: "12511368",
+    jurusan: "DKV X-2",
+    etika: 70,
+    prompt: 50,
+    evaluasi: 50,
+    karya: 55,
+    nilaiAkhir: 75.9,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Bukan Prompt",
+    catatanDeteksi: "Jawaban teori sangat singkat dan kurang niat. Bagian 2 tidak menulis prompt asli (hanya 'untuk teks / materi') dan tidak melakukan evaluasi ('tidak ada').",
+    feedback: "Materi remedial kamu sudah tuntas. Namun, untuk tugas-tugas berikutnya, cobalah untuk lebih serius dalam merancang prompt dan memberikan ulasan evaluasi agar pemahamanmu lebih optimal. Semangat belajar!"
+  },
+  {
+    nis: "12510994",
+    jurusan: "TJKT X-3",
+    etika: 85,
+    prompt: 95,
+    evaluasi: 98,
+    karya: 95,
+    nilaiAkhir: 79.2,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Bagian 1 orisinal dan singkat. Evaluasi prompt di Bagian 2 sangat istimewa karena menunjukkan pemahaman teknis nyata TJKT (koreksi eth0 ke enp0s3 dan systemctl restart networking di Debian 11).",
+    feedback: "Luar biasa! Evaluasi teknis kamu mengenai interface jaringan (eth0 vs enp0s3) dan perintah restart systemd pada Debian 11 menunjukkan pemahaman praktis TJKT yang sangat kuat dan nyata. Kerja yang sangat cerdas!"
+  },
+  {
+    nis: "12511075",
+    jurusan: "TJKT X-1",
+    etika: 88,
+    prompt: 92,
+    evaluasi: 90,
+    karya: 90,
+    nilaiAkhir: 79.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori ditulis sendiri dengan rapi. Bagian 2 merancang prompt dengan baik dan mengoreksi istilah teknis berat (DDoS) menjadi contoh yang relevan untuk siswa kelas 10.",
+    feedback: "Pekerjaan yang sangat baik! Jawaban teori ditulis sendiri secara rapi. Langkahmu menyederhanakan contoh serangan DDoS menjadi kasus hack akun Instagram agar lebih dipahami pemula adalah keputusan pengajaran yang sangat tepat."
+  },
+  {
+    nis: "12511170",
+    jurusan: "TJKT X-1",
+    etika: 87,
+    prompt: 92,
+    evaluasi: 75,
+    karya: 85,
+    nilaiAkhir: 78.5,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Penjelasan teori orisinal dan menyebutkan sekolah secara spesifik. Prompt dirancang sangat terperinci, meskipun evaluasinya masih sederhana.",
+    feedback: "Sangat mengapresiasi keaslian jawaban teorimu yang menyebutkan lingkungan belajarmu. Prompt yang kamu buat sudah sangat lengkap dan terstruktur. Ke depannya, cobalah membuat analisis evaluasi yang lebih kritis terhadap hasil AI."
+  },
+  {
+    nis: "12510801",
+    jurusan: "TJKT X-1",
+    etika: 75,
+    prompt: 70,
+    evaluasi: 50,
+    karya: 70,
+    nilaiAkhir: 76.8,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori sangat singkat dan minimal. Prompt dasar dan tidak menulis ulasan evaluasi ('Tidak ada').",
+    feedback: "Jawaban teorimu sudah ditulis secara mandiri. Namun, di tugas berikutnya, pastikan untuk merancang prompt dengan lebih terperinci dan mengisi ulasan evaluasi agar nilai kamu bisa lebih maksimal. Terus berusaha!"
+  },
+  {
+    nis: "12510880",
+    jurusan: "DKV X-2",
+    etika: 60,
+    prompt: 85,
+    evaluasi: 78,
+    karya: 80,
+    nilaiAkhir: 77.3,
+    kategoriEtika: "Copy-Paste AI",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori ditulis dalam bahasa yang sangat formal dan sempurna tanpa typo, terindikasi menyalin dari AI. Prompt dikerjakan dengan cukup baik, namun evaluasinya agak umum.",
+    feedback: "Nilai remedial kamu sudah tuntas. Di tugas mendatang, cobalah untuk menuliskan jawaban teori menggunakan gaya bahasamu sendiri secara jujur daripada menyalin teks formal AI. Menulis sendiri akan melatih pemahamanmu!"
+  },
+  {
+    nis: "12511191",
+    jurusan: "DKV X-2",
+    etika: 94,
+    prompt: 92,
+    evaluasi: 80,
+    karya: 90,
+    nilaiAkhir: 79.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Orisinalitas sangat baik. Jawaban teori memberikan contoh kasus riil DKV yang sangat spesifik (AI Comic Colorist dan mengevaluasi warna foto gambar). Prompt dibuat mandiri dengan baik.",
+    feedback: "Kreatif dan orisinal! Penggunaan contoh profesi AI Comic Colorist serta ide mengirimkan foto gambar untuk dievaluasi AI menunjukkan pemahaman praktis DKV yang sangat kontekstual. Pertahankan kreativitas hebat ini!"
+  },
+  {
+    nis: "12511336",
+    jurusan: "DKV X-1",
+    etika: 74,
+    prompt: 80,
+    evaluasi: 55,
+    karya: 75,
+    nilaiAkhir: 77.2,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Pemahaman teori dan evaluasi dikerjakan dengan sangat minimalis dan terburu-buru. Prompt menggunakan format RTCC sederhana dengan bahasa kasual.",
+    feedback: "Jawaban teorimu ditulis secara mandiri. Di tugas-tugas mendatang, luangkan waktu lebih banyak untuk menguraikan teori dan memberikan ulasan evaluasi secara lengkap dan detail agar pemahaman belajarmu tergambar optimal."
+  },
+  {
+    nis: "12511078",
+    jurusan: "DKV X-1",
+    etika: 82,
+    prompt: 80,
+    evaluasi: 60,
+    karya: 75,
+    nilaiAkhir: 77.6,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Campuran",
+    catatanDeteksi: "Bagian 1 dikerjakan sendiri dengan banyak typo alami. Namun, prompt di Bagian 2 sangat rumit dan profesional, kontras dengan evaluasi yang hanya berupa 4 kata ('Ubah manjadi semi formal'), terindikasi menyalin prompt dari luar.",
+    feedback: "Teori etika AI sudah dikerjakan sendiri dengan baik. Di tugas berikutnya, usahakan agar rancangan prompt ditulis secara mandiri menggunakan bahasa sendiri, dan sertakan ulasan evaluasi yang lebih mendalam untuk melatih pemikiran kritis."
+  },
+  {
+    nis: "12511030",
+    jurusan: "DKV X-1",
+    etika: 78,
+    prompt: 70,
+    evaluasi: 55,
+    karya: 70,
+    nilaiAkhir: 77.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori dikerjakan sendiri secara singkat. Prompt yang dibuat sangat sederhana dan evaluasinya hanya menyatakan bahwa prompt kurang detail tanpa mengkritisi hasil AI.",
+    feedback: "Pemahaman teori sudah mandiri. Untuk tugas merancang prompt selanjutnya, berusahalah menyertakan instruksi yang lebih lengkap sejak awal dan lakukan kritik atau analisis terhadap hasil AI secara konkret. Semangat belajar!"
+  },
+  {
+    nis: "12511059",
+    jurusan: "DKV X-1",
+    etika: 85,
+    prompt: 88,
+    evaluasi: 92,
+    karya: 90,
+    nilaiAkhir: 78.8,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Pengerjaan mandiri dengan orisinalitas tinggi. Bagian 2 merancang prompt dengan baik dan memberikan catatan evaluasi konkret tentang penyesuaian warna serta penyederhanaan konten presentasi.",
+    feedback: "Kerja yang sangat baik dan jujur! Ulasan evaluasimu mengenai perbaikan warna tema visual serta penyederhanaan konten di Gamma AI sangat bagus dan relevan dengan kompetensi DKV. Teruskan prestasi belajarmu!"
+  },
+  {
+    nis: "12511171",
+    jurusan: "TJKT X-2",
+    etika: 94,
+    prompt: 92,
+    evaluasi: 96,
+    karya: 92,
+    nilaiAkhir: 79.4,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Sangat Baik! Penjelasan teori menggunakan analogi asisten pembaca buku yang komunikatif. Evaluasi prompt sangat cerdas dan kritis secara teknis (mendeteksi dan mengoreksi protokol keamanan WEP yang usang ke WPA2/WPA3).",
+    feedback: "Sangat istimewa! Penjelasan analogi asisten pembaca buku kamu sangat mudah dipahami. Selain itu, kejelianmu mengoreksi saran enkripsi WEP yang usang dari AI menjadi WPA2/WPA3 menunjukkan kompetensi teknis TKJ yang luar biasa. Hebat!"
+  },
+  {
+    nis: "12510965",
+    jurusan: "TJKT X-1",
+    etika: 93,
+    prompt: 90,
+    evaluasi: 50,
+    karya: 80,
+    nilaiAkhir: 78.1,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori sangat baik dengan analogi subnetting rumah. Prompt dirancang dengan format CCNA terstruktur. Namun, tidak menulis ulasan evaluasi sama sekali.",
+    feedback: "Pemahaman teorimu sangat mendalam dan kreatif dengan analogi subnetting rumah. Desain prompt instruktur CCNA juga sangat baik. Sayangnya, kamu tidak mengisi bagian evaluasi. Jangan lupa melengkapinya di tugas berikutnya ya!"
+  },
+  {
+    nis: "12511020",
+    jurusan: "DKV X-3",
+    etika: 85,
+    prompt: 88,
+    evaluasi: 88,
+    karya: 88,
+    nilaiAkhir: 78.7,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori ditulis secara orisinal dengan gaya bahasa sendiri. Bagian 2 merancang prompt dengan baik dan menyertakan ulasan evaluasi berupa perintah tindak lanjut untuk menyederhanakan output.",
+    feedback: "Hasil pekerjaan yang orisinal. Kamu sudah merancang prompt dengan baik dan memberikan evaluasi yang sangat praktis, yaitu meminta AI meringkas ulang output yang dirasa terlalu panjang. Teruskan langkah belajar mandirimu!"
   }
 ];
 
@@ -424,12 +619,26 @@ function performSearch(nis) {
     // Scroll to results smoothly on mobile
     resultArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     
+    // Highlight active row in table if it exists
+    document.querySelectorAll("#student-table-body tr").forEach(row => {
+      if (row.getAttribute("data-nis") === student.nis) {
+        row.classList.add("selected-row");
+      } else {
+        row.classList.remove("selected-row");
+      }
+    });
+    
   } else {
     // Hide results
     resultArea.classList.add("hidden");
     // Show error
     errorArea.classList.remove("hidden");
     errorArea.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    
+    // Remove active highlight in table
+    document.querySelectorAll("#student-table-body tr").forEach(row => {
+      row.classList.remove("selected-row");
+    });
   }
 }
 
@@ -445,4 +654,113 @@ searchInput.addEventListener("keypress", (e) => {
 // Auto-tugas filter typing numbers only
 searchInput.addEventListener("input", (e) => {
   searchInput.value = searchInput.value.replace(/[^0-9]/g, '');
+});
+
+// ==========================================
+// Student Directory & Interactive Table Logic
+// ==========================================
+
+const tableBody = document.getElementById("student-table-body");
+const tableSearch = document.getElementById("table-search");
+const filterJurusan = document.getElementById("filter-jurusan");
+const filterOrisinalitas = document.getElementById("filter-orisinalitas");
+
+// Helper to map status to CSS badge pill class
+function getPillClass(status) {
+  if (status === "Murni Murid") return "pill-murni";
+  if (status === "Campuran" || status === "Salin Panduan" || status === "Campuran/Salin Panduan") return "pill-campuran";
+  return "pill-plagiat";
+}
+
+// Function to render the student list table
+function renderStudentTable() {
+  const searchQuery = tableSearch.value.trim().toLowerCase();
+  const jurusanVal = filterJurusan.value;
+  const orisinalitasVal = filterOrisinalitas.value;
+  
+  // Filter database
+  const filtered = studentDatabase.filter(student => {
+    // 1. Search filter (by NIS)
+    const matchSearch = student.nis.toLowerCase().includes(searchQuery);
+    
+    // 2. Jurusan filter
+    let matchJurusan = true;
+    if (jurusanVal !== "ALL") {
+      matchJurusan = student.jurusan.toUpperCase().includes(jurusanVal);
+    }
+    
+    // 3. Orisinalitas filter
+    let matchOrisinalitas = true;
+    if (orisinalitasVal !== "ALL") {
+      if (orisinalitasVal === "Campuran/Salin Panduan") {
+        matchOrisinalitas = (student.kategoriEtika === "Campuran" || student.kategoriEtika === "Salin Panduan" ||
+                             student.kategoriPrompt === "Campuran" || student.kategoriPrompt === "Salin Panduan");
+      } else {
+        matchOrisinalitas = (student.kategoriEtika === orisinalitasVal || student.kategoriPrompt === orisinalitasVal);
+      }
+    }
+    
+    return matchSearch && matchJurusan && matchOrisinalitas;
+  });
+  
+  // Clear body
+  tableBody.innerHTML = "";
+  
+  if (filtered.length === 0) {
+    tableBody.innerHTML = `<tr><td colspan="6" class="text-center" style="color: var(--text-muted); padding: 2rem;">Tidak ada data siswa yang cocok dengan filter.</td></tr>`;
+    return;
+  }
+  
+  // Populate body
+  filtered.forEach(student => {
+    const tr = document.createElement("tr");
+    tr.setAttribute("data-nis", student.nis);
+    
+    // Highlight if active
+    const currentActiveNis = searchInput.value.trim();
+    if (currentActiveNis === student.nis && !resultArea.classList.contains("hidden")) {
+      tr.classList.add("selected-row");
+    }
+    
+    tr.innerHTML = `
+      <td><strong>${student.nis}</strong></td>
+      <td>${student.jurusan}</td>
+      <td class="text-center" style="font-weight: 700; color: var(--color-success);">${student.nilaiAkhir.toFixed(1)}</td>
+      <td><span class="badge-status-pill ${getPillClass(student.kategoriEtika)}">${student.kategoriEtika}</span></td>
+      <td><span class="badge-status-pill ${getPillClass(student.kategoriPrompt)}">${student.kategoriPrompt}</span></td>
+      <td class="text-center">
+        <button class="action-btn-sm" data-nis="${student.nis}">Pilih</button>
+      </td>
+    `;
+    
+    // Clicking anywhere on row selects student
+    tr.addEventListener("click", (e) => {
+      if (e.target.tagName !== "BUTTON") {
+        selectStudent(student.nis);
+      }
+    });
+    
+    // Button click handler
+    tr.querySelector(".action-btn-sm").addEventListener("click", () => {
+      selectStudent(student.nis);
+    });
+    
+    tableBody.appendChild(tr);
+  });
+}
+
+// Function to handle choosing a student
+function selectStudent(nis) {
+  searchInput.value = nis;
+  performSearch(nis);
+}
+
+// Table event listeners
+tableSearch.addEventListener("input", renderStudentTable);
+filterJurusan.addEventListener("change", renderStudentTable);
+filterOrisinalitas.addEventListener("change", renderStudentTable);
+
+// Initialize table on load
+document.addEventListener("DOMContentLoaded", () => {
+  renderStudentTable();
 });
