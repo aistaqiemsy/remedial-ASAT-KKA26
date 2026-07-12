@@ -612,6 +612,46 @@ const studentDatabase = [
     kategoriPrompt: "Murni Murid",
     catatanDeteksi: "Bagian 1 sangat baik dan panjang, ditulis secara mandiri dengan penjelasan lengkap tentang cara kerja AI yang orisinal. Bagian 2 membuat prompt keamanan jaringan yang terstruktur dengan format RTCC yang baik. Sayangnya, kolom evaluasi/perubahan prompt dibiarkan kosong sehingga tidak bisa dinilai.",
     feedback: "Penjelasan teori etika AI kamu sangat baik, panjang, dan ditulis secara mandiri. Rancangan prompt keamanan jaringan juga sudah terstruktur dengan format yang tepat. Sayang sekali bagian evaluasinya tidak diisi. Di tugas berikutnya, jangan lupa tuliskan catatan evaluasi dan revisi promptmu agar nilaimu lebih optimal. Semangat!"
+  },
+  // === SISWA BATCH 3 (Penilaian Terbaru) ===
+  {
+    nis: "12511240",
+    jurusan: "DKV X-2",
+    etika: 80,
+    prompt: 88,
+    evaluasi: 45,
+    karya: 75,
+    nilaiAkhir: 77.4,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Bagian 1 cukup baik dengan bahasa natural dan sedikit typo ('mencocokannya'). Penjelasan cara kerja AI sudah benar (pola → menyusun jawaban kata demi kata). Risiko yang disebutkan (plagiarisme dan privasi data) cukup orisinal dan kontekstual. Bagian 2 membuat prompt RTCC sangat lengkap dengan 10 slide, format role/context/task/batasan terstruktur baik. Namun evaluasi/perubahan prompt sangat dangkal, hanya meminta format visual ('teks lebih gede' dan 'tambah slide penutup') tanpa mengkritisi kualitas output AI.",
+    feedback: "Penjelasan teori etika AI kamu cukup baik dan ditulis secara mandiri. Prompt RTCC yang kamu rancang untuk 10 slide sudah sangat terstruktur dan lengkap! Untuk tugas berikutnya, cobalah memberikan evaluasi yang lebih kritis terhadap kualitas isi output AI, bukan hanya meminta perubahan format atau penambahan slide. Dengan evaluasi yang lebih mendalam, nilaimu pasti bisa lebih optimal. Semangat!"
+  },
+  {
+    nis: "12511015",
+    jurusan: "DKV X-2",
+    etika: 60,
+    prompt: 78,
+    evaluasi: 40,
+    karya: 68,
+    nilaiAkhir: 76.1,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Bagian 1 sangat dangkal dan terdapat miskonsepsi: 'AI mengambil beberapa jawaban dari website di google' — cara kerja AI yang sebenarnya berbeda dari pencarian web biasa. Manfaat dan risiko ditulis singkat namun orisinal. Bagian 2 membuat prompt desain grafis cukup terstruktur, namun terdapat kesalahan konteks target (ditujukan untuk 'SMA kelas XI' bukan siswa SMK DKV). Evaluasi/perubahan prompt sangat minimal, hanya mengubah 'SMA' menjadi 'SMK' dan panjang teks dari 1000 ke 800 kata, tanpa analisis kritis terhadap kualitas output AI.",
+    feedback: "Nilai remedial kamu sudah tuntas. Untuk pemahaman teori, perlu diluruskan bahwa AI seperti ChatGPT tidak bekerja dengan 'mencari jawaban dari website Google', melainkan memprediksi kata berdasarkan pola dari data latihan. Di tugas berikutnya, tuliskan penjelasan yang lebih mendalam dan pastikan prompt yang dibuat ditujukan untuk konteks SMK DKV. Sertakan pula evaluasi yang lebih kritis terhadap hasil AI. Semangat belajar!"
+  },
+  {
+    nis: "12510997",
+    jurusan: "DKV X-2",
+    etika: 78,
+    prompt: 88,
+    evaluasi: 82,
+    karya: 82,
+    nilaiAkhir: 78.2,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Bagian 1 konten cukup baik meski ada duplikasi teks (cara kerja AI ditulis dua kali secara identik). Pemahaman cara kerja AI sudah benar (menerima prompt → memahami → mencocokkan pola → menyusun kata). Manfaat dan risiko singkat namun relevan. Cara menghindari plagiarisme dijelaskan dengan baik dan orisinal. Bagian 2 membuat prompt RTCC lengkap tentang peran AI dalam DKV dengan 6 slide, format Role/Task/Context/Constraint jelas. Evaluasi menjelaskan proses perbaikan prompt secara naratif yang konkret (menambahkan jumlah slide, bahasa, sasaran presentasi, dan batasan poin per slide).",
+    feedback: "Penjelasan cara kerja AI kamu sudah benar dan tepat! Prompt RTCC tentang peran AI dalam DKV juga sangat terstruktur dengan baik. Selain itu, evaluasi perbaikan prompt kamu menunjukkan proses berpikir yang sistematis dan mandiri. Di tugas berikutnya, pastikan tidak ada bagian yang terduplikasi agar jawaban terlihat lebih rapi dan fokus. Pertahankan semangat belajar mandirimu!"
   }
 ];
 
