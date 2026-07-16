@@ -605,15 +605,14 @@ const studentDatabase = [
     jurusan: "TJKT X-2",
     etika: 90,
     prompt: 88,
-    evaluasi: 50,
+    evaluasi: 88,
     karya: 85,
-    nilaiAkhir: 78.7,
+    nilaiAkhir: 78.8,
     kategoriEtika: "Murni Murid",
     kategoriPrompt: "Murni Murid",
-    catatanDeteksi: "Bagian 1 sangat baik dan panjang, ditulis secara mandiri dengan penjelasan lengkap tentang cara kerja AI yang orisinal. Bagian 2 membuat prompt keamanan jaringan yang terstruktur dengan format RTCC yang baik. Sayangnya, kolom evaluasi/perubahan prompt dibiarkan kosong sehingga tidak bisa dinilai.",
-    feedback: "Penjelasan teori etika AI kamu sangat baik, panjang, dan ditulis secara mandiri. Rancangan prompt keamanan jaringan juga sudah terstruktur dengan format yang tepat. Sayang sekali bagian evaluasinya tidak diisi. Di tugas berikutnya, jangan lupa tuliskan catatan evaluasi dan revisi promptmu agar nilaimu lebih optimal. Semangat!"
-  },
-  // === SISWA BATCH 3 (Penilaian Terbaru) ===
+    catatanDeteksi: "Bagian 1 sangat baik dan panjang, ditulis secara mandiri dengan penjelasan lengkap tentang cara kerja AI yang orisinal. Bagian 2 membuat prompt keamanan jaringan yang terstruktur dengan format RTCC yang baik. Kolom evaluasi juga telah diperbaiki dengan menuliskan prompt revisi dan parameter perubahan yang spesifik.",
+    feedback: "Penjelasan teori etika AI kamu sangat baik, panjang, dan ditulis secara mandiri. Rancangan prompt keamanan jaringan juga sudah terstruktur dengan format yang tepat. Evaluasi prompt yang kamu tambahkan pada pengumpulan ulang juga sangat baik dan menjelaskan perubahan parameter secara spesifik. Pertahankan kualitas belajarmu! Kerja bagus!"
+  }  // === SISWA BATCH 3 (Penilaian Terbaru) ===
   {
     nis: "12511240",
     jurusan: "DKV X-2",
@@ -770,6 +769,59 @@ const studentDatabase = [
     kategoriPrompt: "Murni Murid",
     catatanDeteksi: "Bagian 1 sangat singkat dan umum. Penjelasan cara kerja AI tidak mendalam. Q2 menyebutkan 'minimnya literasi tentanggg AI' (typo alami) sebagai risiko — menunjukkan keaslian tulisan. Bagian 2 membuat prompt dengan role ganda (ahli AI dan DKV) yang cukup kreatif dan kontekstual. Evaluasi sangat singkat hanya 1 kalimat ('buat kerangka pptnya lebih simple dan mudah di pahami') tanpa menunjukkan pemikiran kritis.",
     feedback: "Tulisan teori kamu orisinal, terlihat dari typo alami yang muncul. Prompt dengan role ganda ahli AI dan DKV menunjukkan kreativitas yang baik! Namun, evaluasi yang sangat singkat tidak menunjukkan proses berpikir kritis terhadap output AI. Di tugas berikutnya, tuliskan evaluasi yang lebih mendalam: apa yang kurang dari hasil AI pertama dan mengapa kamu memintanya berubah. Semangat!"
+  }
+,
+  {
+    nis: "12511009",
+    jurusan: "DKV X-2",
+    etika: 82,
+    prompt: 85,
+    evaluasi: 78,
+    karya: 80,
+    nilaiAkhir: 78.1,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori ditulis sendiri dengan bahasa sederhana dan typo alami ('promt', 'ilustrator'). Prompt dirancang mandiri dengan menyertakan instruksi slide dan saran visual. Evaluasi prompt sangat singkat namun menjelaskan alasan perubahan.",
+    feedback: "Pemahaman etika AI kamu sudah sangat baik dan ditulis secara mandiri. Rancangan prompt juga terstruktur dengan baik. Di tugas berikutnya, cobalah untuk lebih memperdalam bagian evaluasi prompt agar analisismu semakin tajam. Semangat!"
+  },
+  {
+    nis: "12511069",
+    jurusan: "DKV X-3",
+    etika: 88,
+    prompt: 75,
+    evaluasi: 80,
+    karya: 78,
+    nilaiAkhir: 78.2,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori ditulis secara mandiri dengan gaya bahasa siswa yang khas dan kasual ('kaya', 'nyocokin', 'ngawur'). Prompt dirancang secara mandiri meskipun cukup sederhana. Evaluasi menjelaskan proses penyederhanaan bahasa prompt dengan kritis.",
+    feedback: "Penjelasan teori etika AI kamu sangat orisinal dan ditulis dengan bahasa sendiri yang natural dan jujur. Evaluasi prompt yang kamu lakukan juga menunjukkan pemikiran kritis yang baik. Di tugas mendatang, cobalah merancang prompt yang lebih detail dengan menambahkan batasan (constraint) seperti jumlah slide agar hasil AI lebih presisi. Semangat!"
+  },
+  {
+    nis: "12511011",
+    jurusan: "DKV X-3",
+    etika: 88,
+    prompt: 92,
+    evaluasi: 76,
+    karya: 84,
+    nilaiAkhir: 78.6,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori ditulis mandiri secara terstruktur dan logis. Prompt awal dirancang dengan sangat baik menggunakan seluruh kriteria RTCC. Evaluasi prompt berupa instruksi perbaikan yang orisinal meskipun cukup singkat.",
+    feedback: "Pekerjaan yang sangat baik! Penjelasan teorimu orisinal dan mudah dipahami. Prompt pertama yang kamu buat sangat bagus dan memenuhi seluruh kriteria prompt engineering (RTCC). Ulasan evaluasi prompt juga sudah menunjukkan upaya perbaikan hasil. Pertahankan prestasi belajarmu!"
+  },
+  {
+    nis: "12510874",
+    jurusan: "TJKT X-3",
+    etika: 86,
+    prompt: 92,
+    evaluasi: 76,
+    karya: 82,
+    nilaiAkhir: 78.4,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori ditulis secara mandiri dan logis. Prompt awal dirancang dengan sangat baik, mencakup detail materi yang relevan dengan jurusan TJKT. Evaluasi prompt tertulis secara manual berupa instruksi revisi yang terarah.",
+    feedback: "Kerja bagus! Pemahaman teorimu orisinal dan terstruktur. Prompt kejuruan TJKT yang kamu buat sangat detail dan lengkap dengan kriteria RTCC. Evaluasi prompt yang kamu tulis juga menunjukkan kemampuan perbaikan yang terarah. Terus kembangkan kemampuanmu!"
   }
 ];
 

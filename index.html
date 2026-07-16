@@ -47,7 +47,7 @@
             </svg>
           </div>
           <div class="stat-info">
-            <span class="stat-value">59 Murid</span>
+            <span class="stat-value">63 Murid</span>
             <span class="stat-label">Total Peserta Remedial</span>
           </div>
         </div>
@@ -304,55 +304,57 @@
         <!-- Class Performance Stats Chart -->
         <div class="glass-panel stats-panel">
           <h4>Distribusi Nilai Remedial Kelas</h4>
-          <p class="stats-subtitle">Jumlah siswa per rentang nilai akhir (Total 59 Siswa)</p>
+          <p class="stats-subtitle">Jumlah siswa per rentang nilai akhir (Total 63 Siswa)</p>
           
           <!-- Visual SVG Chart -->
           <div class="chart-container">
             <svg viewBox="0 0 400 200" class="bar-chart">
-              <!-- Y Grid Lines (max scale = 30) -->
+              <!-- Y Grid Lines (max scale = 36) -->
               <line x1="40" y1="20" x2="380" y2="20" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
-              <line x1="40" y1="50" x2="380" y2="50" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
-              <line x1="40" y1="80" x2="380" y2="80" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
-              <line x1="40" y1="110" x2="380" y2="110" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
-              <line x1="40" y1="140" x2="380" y2="140" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+              <line x1="40" y1="45" x2="380" y2="45" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+              <line x1="40" y1="70" x2="380" y2="70" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+              <line x1="40" y1="95" x2="380" y2="95" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+              <line x1="40" y1="120" x2="380" y2="120" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
+              <line x1="40" y1="145" x2="380" y2="145" stroke="rgba(255,255,255,0.05)" stroke-dasharray="4" />
               <line x1="40" y1="170" x2="380" y2="170" stroke="rgba(255,255,255,0.1)" />
 
-              <!-- Y Axis Labels (max = 30) -->
-              <text x="30" y="24" class="chart-label-y" text-anchor="end">30</text>
-              <text x="30" y="54" class="chart-label-y" text-anchor="end">24</text>
-              <text x="30" y="84" class="chart-label-y" text-anchor="end">18</text>
-              <text x="30" y="114" class="chart-label-y" text-anchor="end">12</text>
-              <text x="30" y="144" class="chart-label-y" text-anchor="end">6</text>
+              <!-- Y Axis Labels (max = 36) -->
+              <text x="30" y="24" class="chart-label-y" text-anchor="end">36</text>
+              <text x="30" y="49" class="chart-label-y" text-anchor="end">30</text>
+              <text x="30" y="74" class="chart-label-y" text-anchor="end">24</text>
+              <text x="30" y="99" class="chart-label-y" text-anchor="end">18</text>
+              <text x="30" y="124" class="chart-label-y" text-anchor="end">12</text>
+              <text x="30" y="149" class="chart-label-y" text-anchor="end">6</text>
               <text x="30" y="174" class="chart-label-y" text-anchor="end">0</text>
 
               <!-- 
-                Data (59 siswa): [75.0-76.0]=3, [76.1-77.0]=7, [77.1-78.0]=14, [78.1-79.0]=29, [79.1-80.0]=6
-                Chart area height = 150px (y:20 to y:170). Scale: 150/30 = 5px per unit.
-                Bar 1 (3):  h=15, y=155
-                Bar 2 (7):  h=35, y=135
-                Bar 3 (14): h=70, y=100
-                Bar 4 (29): h=145, y=25
-                Bar 5 (6):  h=30, y=140
+                Data (63 siswa): [75.0-76.0]=3, [76.1-77.0]=7, [77.1-78.0]=14, [78.1-79.0]=33, [79.1-80.0]=6
+                Chart area height = 150px (y:20 to y:170). Scale: 150/36 = 4.1667px per unit.
+                Bar 1 (3):  h=12.5, y=157.5
+                Bar 2 (7):  h=29.2, y=140.8
+                Bar 3 (14): h=58.3, y=111.7
+                Bar 4 (33): h=137.5, y=32.5
+                Bar 5 (6):  h=25.0, y=145.0
               -->
               <!-- Bar 1 (75.0 - 76.0) count: 3 -->
-              <rect x="65" y="155" width="35" height="15" rx="4" class="bar bar-1" />
-              <text x="82.5" y="147" class="bar-value" text-anchor="middle">3</text>
+              <rect x="65" y="157.5" width="35" height="12.5" rx="4" class="bar bar-1" />
+              <text x="82.5" y="149" class="bar-value" text-anchor="middle">3</text>
 
               <!-- Bar 2 (76.1 - 77.0) count: 7 -->
-              <rect x="130" y="135" width="35" height="35" rx="4" class="bar bar-2" />
-              <text x="147.5" y="127" class="bar-value" text-anchor="middle">7</text>
+              <rect x="130" y="140.8" width="35" height="29.2" rx="4" class="bar bar-2" />
+              <text x="147.5" y="133" class="bar-value" text-anchor="middle">7</text>
 
               <!-- Bar 3 (77.1 - 78.0) count: 14 -->
-              <rect x="195" y="100" width="35" height="70" rx="4" class="bar bar-3" />
-              <text x="212.5" y="92" class="bar-value" text-anchor="middle">14</text>
+              <rect x="195" y="111.7" width="35" height="58.3" rx="4" class="bar bar-3" />
+              <text x="212.5" y="104" class="bar-value" text-anchor="middle">14</text>
 
-              <!-- Bar 4 (78.1 - 79.0) count: 29 -->
-              <rect x="260" y="25" width="35" height="145" rx="4" class="bar bar-4" />
-              <text x="277.5" y="17" class="bar-value" text-anchor="middle">29</text>
+              <!-- Bar 4 (78.1 - 79.0) count: 33 -->
+              <rect x="260" y="32.5" width="35" height="137.5" rx="4" class="bar bar-4" />
+              <text x="277.5" y="24" class="bar-value" text-anchor="middle">33</text>
 
               <!-- Bar 5 (79.1 - 80.0) count: 6 -->
-              <rect x="325" y="140" width="35" height="30" rx="4" class="bar bar-5" />
-              <text x="342.5" y="132" class="bar-value" text-anchor="middle">6</text>
+              <rect x="325" y="145" width="35" height="25" rx="4" class="bar bar-5" />
+              <text x="342.5" y="137" class="bar-value" text-anchor="middle">6</text>
 
               <!-- X Axis Labels -->
               <text x="82.5" y="188" class="chart-label-x" text-anchor="middle">75.0-76.0</text>
