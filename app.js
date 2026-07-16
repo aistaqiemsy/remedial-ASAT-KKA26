@@ -612,7 +612,7 @@ const studentDatabase = [
     kategoriPrompt: "Murni Murid",
     catatanDeteksi: "Bagian 1 sangat baik dan panjang, ditulis secara mandiri dengan penjelasan lengkap tentang cara kerja AI yang orisinal. Bagian 2 membuat prompt keamanan jaringan yang terstruktur dengan format RTCC yang baik. Kolom evaluasi juga telah diperbaiki dengan menuliskan prompt revisi dan parameter perubahan yang spesifik.",
     feedback: "Penjelasan teori etika AI kamu sangat baik, panjang, dan ditulis secara mandiri. Rancangan prompt keamanan jaringan juga sudah terstruktur dengan format yang tepat. Evaluasi prompt yang kamu tambahkan pada pengumpulan ulang juga sangat baik dan menjelaskan perubahan parameter secara spesifik. Pertahankan kualitas belajarmu! Kerja bagus!"
-  }  // === SISWA BATCH 3 (Penilaian Terbaru) ===
+  },  // === SISWA BATCH 3 (Penilaian Terbaru) ===
   {
     nis: "12511240",
     jurusan: "DKV X-2",
@@ -769,8 +769,7 @@ const studentDatabase = [
     kategoriPrompt: "Murni Murid",
     catatanDeteksi: "Bagian 1 sangat singkat dan umum. Penjelasan cara kerja AI tidak mendalam. Q2 menyebutkan 'minimnya literasi tentanggg AI' (typo alami) sebagai risiko — menunjukkan keaslian tulisan. Bagian 2 membuat prompt dengan role ganda (ahli AI dan DKV) yang cukup kreatif dan kontekstual. Evaluasi sangat singkat hanya 1 kalimat ('buat kerangka pptnya lebih simple dan mudah di pahami') tanpa menunjukkan pemikiran kritis.",
     feedback: "Tulisan teori kamu orisinal, terlihat dari typo alami yang muncul. Prompt dengan role ganda ahli AI dan DKV menunjukkan kreativitas yang baik! Namun, evaluasi yang sangat singkat tidak menunjukkan proses berpikir kritis terhadap output AI. Di tugas berikutnya, tuliskan evaluasi yang lebih mendalam: apa yang kurang dari hasil AI pertama dan mengapa kamu memintanya berubah. Semangat!"
-  }
-,
+  },
   {
     nis: "12511009",
     jurusan: "DKV X-2",
