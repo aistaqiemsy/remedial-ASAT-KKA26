@@ -1407,6 +1407,97 @@ const studentDatabase = [
     kategoriPrompt: "Murni Murid",
     catatanDeteksi: "Jawaban teori sangat singkat namun orisinal. Prompt presentasi prinsip desain grafis 8 slide di Q4 cukup lengkap dengan poin-poin spesifik. Evaluasi prompt sangat minimal hanya menambahkan 'poster' pada materi.",
     feedback: "Pemahaman etika AI sudah ditulis mandiri meskipun singkat. Prompt prinsip desain grafis kamu cukup terstruktur. Namun untuk tugas berikutnya, cobalah menulis evaluasi dan revisi prompt yang lebih mendalam agar kemampuan prompt engineering-mu makin tajam!"
+  },
+{
+    nis: "12510995",
+    jurusan: "TJKT X-1",
+    etika: 86,
+    prompt: 88,
+    evaluasi: 82,
+    karya: 84,
+    nilaiAkhir: 78.5,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori mandiri dan lengkap meskipun penempatan kolom Q1-Q4 tertukar. Prompt RTCC instalasi jaringan LAN sangat terstruktur (8-10 slide, bahasa mudah, troubleshooting). Evaluasi prompt menjelaskan perbaikan parameter secara kritis.",
+    feedback: "Kerja yang sangat baik dan orisinal! Prompt instalasi jaringan LAN RTCC yang kamu buat sangat terstruktur dan lengkap. Evaluasi yang menjelaskan penambahan jumlah slide dan contoh praktis juga sudah sangat baik. Pastikan mengisi kolom sesuai urutannya di tugas berikutnya!"
+  },
+  {
+    nis: "12511275",
+    jurusan: "DKV X-2",
+    etika: 78,
+    prompt: 78,
+    evaluasi: 60,
+    karya: 72,
+    nilaiAkhir: 77.3,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori dikerjakan mandiri meskipun singkat. Prompt pembuatan poster DKV menggunakan AI cukup spesifik. Evaluasi hanya meminta format paragraf tanpa analisis mendalam tentang kualitas prompt.",
+    feedback: "Pemahaman teori sudah orisinal meskipun ringkas. Prompt poster DKV menggunakan AI cukup baik. Namun, cobalah meningkatkan kualitas evaluasi prompt dengan memberikan analisis yang lebih mendalam di tugas berikutnya. Semangat belajar!"
+  },
+  {
+    nis: "12510796",
+    jurusan: "DKV X-3",
+    etika: 72,
+    prompt: 80,
+    evaluasi: 55,
+    karya: 68,
+    nilaiAkhir: 76.9,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban sangat singkat tapi orisinal dengan bahasa kasual murid. Prompt RTCC dasar penggunaan Blender untuk kelas XI DKV cukup spesifik dengan batasan 4 poin dan bahasa mudah. Evaluasi sangat minimal.",
+    feedback: "Orisinalitas jawaban terlihat dari bahasa kasual yang kamu gunakan. Prompt Blender RTCC kamu cukup baik dan spesifik. Tingkatkan lagi kualitas jawaban teori dan evaluasi promptmu agar lebih mendalam di tugas berikutnya. Kamu pasti bisa!"
+  },
+  {
+    nis: "12511402",
+    jurusan: "DKV X-3",
+    etika: 78,
+    prompt: 78,
+    evaluasi: 68,
+    karya: 75,
+    nilaiAkhir: 77.5,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori orisinal meskipun singkat. Prompt presentasi DKV ditulis dalam Bahasa Inggris yang menunjukkan kreativitas. Evaluasi menambahkan permintaan teks penjelasan yang lebih panjang meskipun masih sederhana.",
+    feedback: "Pemahaman teori ditulis secara mandiri. Kreativitas dalam menggunakan Bahasa Inggris pada prompt presentasi DKV patut diapresiasi! Untuk tugas berikutnya, coba tingkatkan kedalaman evaluasi prompt dengan menjelaskan alasan perubahan yang kamu buat secara lebih terperinci."
+  },
+  {
+    nis: "12511153",
+    jurusan: "TJKT X-2",
+    etika: 92,
+    prompt: 92,
+    evaluasi: 85,
+    karya: 88,
+    nilaiAkhir: 79.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Orisinalitas sangat tinggi. Teori sangat lengkap dengan terminologi yang tepat. Prompt RTCC dasar jaringan komputer 8 slide sangat sempurna dengan semua elemen terpenuhi. Evaluasi prompt menambahkan contoh kontekstual dari lingkungan sekolah.",
+    feedback: "Luar biasa! Penjelasan teori kamu sangat lengkap, runtut, dan ditulis secara mandiri. Rancangan prompt RTCC dasar jaringan komputer memenuhi semua kriteria dengan sangat baik. Ulasan evaluasimu juga kritis dengan menambahkan contoh kehidupan sehari-hari. Pertahankan prestasi ini!"
+  },
+  {
+    nis: "12511342",
+    jurusan: "TJKT X-2",
+    etika: 82,
+    prompt: 90,
+    evaluasi: 95,
+    karya: 90,
+    nilaiAkhir: 78.8,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori orisinal dengan bahasa kasual alami. Prompt master JSON untuk generative video sangat kreatif dan teknis. Evaluasi prompt sangat luar biasa detail dengan panduan karakter konsisten, transisi kamera bertahap, sinkronisasi lip-sync, ekspresi, dan gerakan tubuh.",
+    feedback: "Kerja yang luar biasa kreatif! Prompt JSON generative video yang kamu buat sangat teknis dan inovatif. Yang paling mengesankan adalah evaluasi prompt yang sangat mendetail — mulai dari character lock, continuity, transisi kamera, hingga sinkronisasi bibir. Ini level prompt engineering yang sangat tinggi!"
+  },
+  {
+    nis: "12510913",
+    jurusan: "DKV X-1",
+    etika: 50,
+    prompt: 92,
+    evaluasi: 88,
+    karya: 85,
+    nilaiAkhir: 77.3,
+    kategoriEtika: "Copy-Paste AI",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Q1 tidak menjawab pertanyaan (hanya 'pencarian ide'). Teori Q2-Q4 sangat singkat. Namun, prompt/blueprint produksi video DKV sangat luar biasa detail dengan storyboard lengkap, naskah narasi, palet warna, dan spesifikasi teknis yang sangat profesional.",
+    feedback: "Tuntas remedial. Teori di bagian awal perlu ditingkatkan agar menjawab pertanyaan dengan benar. Namun, blueprint produksi video DKV yang kamu buat sangat luar biasa profesional — mulai dari storyboard, narasi, palet warna hingga tips desain. Bakat DKV-mu sangat terlihat di sini!"
   }
 ];
 
