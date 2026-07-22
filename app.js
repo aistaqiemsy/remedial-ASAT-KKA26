@@ -1329,6 +1329,85 @@ const studentDatabase = [
     catatanDeteksi: "Orisinalitas pengerjaan teori baik. Prompt dasar konfigurasi sudah terstruktur, dan evaluasinya menambahkan tujuan pembelajaran secara runtut.",
     feedback: "Pemahaman teori dan prompt konfigurasi dasar jaringan sudah dikerjakan mandiri dengan baik. Revisi prompt pada bagian evaluasi juga sudah memuat tujuan pembelajaran yang runtut. Bagus sekali!"
   }
+,
+  {
+    nis: "12511181",
+    jurusan: "TJKT X-2",
+    etika: 82,
+    prompt: 88,
+    evaluasi: 68,
+    karya: 78,
+    nilaiAkhir: 78.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori mandiri meskipun penempatan kolom Q1-Q4 tertukar. Perancangan prompt RTCC di Q4 sangat terstruktur, dan resubmission prompt (kolom Prompt) menambahkan tabel perbandingan LAN/MAN/WAN serta soal latihan secara mandiri.",
+    feedback: "Pekerjaan mandiri yang baik! Prompt RTCC dasar jaringan yang kamu rancang sangat terstruktur dengan format Role-Task-Context-Constraint. Resubmisi prompt juga meningkat secara signifikan. Untuk tugas berikutnya, pastikan jawaban diletakkan di kolom yang sesuai ya!"
+  },
+  {
+    nis: "12511100",
+    jurusan: "TJKT X-3",
+    etika: 80,
+    prompt: 75,
+    evaluasi: 50,
+    karya: 68,
+    nilaiAkhir: 77.1,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori dikerjakan secara mandiri meskipun penempatan kolom tertukar. Prompt enkripsi data untuk TKJ cukup baik. Namun kolom evaluasi kosong/hanya nama tools — tidak ada analisis revisi prompt yang dikerjakan.",
+    feedback: "Penjelasan teori ditulis secara orisinal dengan baik. Prompt enkripsi data kamu juga cukup spesifik dan relevan untuk jurusan TJKT. Namun, jangan mengosongkan kolom evaluasi prompt di tugas-tugas berikutnya agar kemampuan analisismu terus berkembang!"
+  },
+  {
+    nis: "12511215",
+    jurusan: "TJKT X-2",
+    etika: 88,
+    prompt: 90,
+    evaluasi: 55,
+    karya: 80,
+    nilaiAkhir: 78.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Teori sangat lengkap dan ditulis secara mandiri. Perancangan prompt artikel jaringan komputer menggunakan struktur RTCC yang sangat baik dengan batasan topologi dan format artikel. Sayang kolom evaluasi hanya berisi nama tools AI.",
+    feedback: "Kerja yang sangat baik! Teori ditulis mandiri dan komprehensif. Rancangan prompt artikel jaringan komputer RTCC-nya sangat terstruktur dan detail. Tingkatkan lagi dengan menuliskan analisis evaluasi prompt secara langsung, bukan hanya nama tools!"
+  },
+  {
+    nis: "12511094",
+    jurusan: "TJKT X-2",
+    etika: 82,
+    prompt: 60,
+    evaluasi: 85,
+    karya: 78,
+    nilaiAkhir: 77.7,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Campuran",
+    catatanDeteksi: "Teori dikerjakan sendiri dengan benar. Kolom Q1-Q4 tertukar urutannya. Prompt awal terpotong hanya berisi peran. Namun, kolom Prompt berisi analisis kritis yang sangat baik tentang perbedaan prompt buruk vs prompt yang spesifik dan efektif.",
+    feedback: "Pemahaman teori cara kerja AI sangat baik dan orisinal! Analisis kritismu tentang ciri-ciri prompt buruk (terlalu umum, tidak menyebut teknologi, tidak ada format output) sangat tepat dan menunjukkan pemahaman yang mendalam. Pertahankan!"
+  },
+  {
+    nis: "12510854",
+    jurusan: "TJKT X-3",
+    etika: 60,
+    prompt: 75,
+    evaluasi: 50,
+    karya: 60,
+    nilaiAkhir: 76.1,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Hampir semua jawaban teori sangat singkat dan minimalis. Prompt Cisco Packet Tracer di Q4 cukup spesifik untuk simulasi jaringan LAN kelas X. Kolom evaluasi dikosongkan dan kolom Prompt tidak diisi.",
+    feedback: "Remedial selesai. Jawaban teori kamu sudah orisinal meskipun sangat singkat. Prompt Cisco Packet Tracer yang kamu buat sudah cukup spesifik dan teknis. Ke depannya, lengkapi semua kolom terutama evaluasi agar nilaimu semakin optimal. Semangat!"
+  },
+  {
+    nis: "12510936",
+    jurusan: "DKV X-2",
+    etika: 70,
+    prompt: 78,
+    evaluasi: 60,
+    karya: 70,
+    nilaiAkhir: 77.0,
+    kategoriEtika: "Murni Murid",
+    kategoriPrompt: "Murni Murid",
+    catatanDeteksi: "Jawaban teori sangat singkat namun orisinal. Prompt presentasi prinsip desain grafis 8 slide di Q4 cukup lengkap dengan poin-poin spesifik. Evaluasi prompt sangat minimal hanya menambahkan 'poster' pada materi.",
+    feedback: "Pemahaman etika AI sudah ditulis mandiri meskipun singkat. Prompt prinsip desain grafis kamu cukup terstruktur. Namun untuk tugas berikutnya, cobalah menulis evaluasi dan revisi prompt yang lebih mendalam agar kemampuan prompt engineering-mu makin tajam!"
+  }
 ];
 
 // DOM Elements
