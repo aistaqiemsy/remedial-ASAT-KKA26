@@ -1633,3 +1633,195 @@ searchInput.addEventListener("keypress", (e) => {
 searchInput.addEventListener("input", (e) => {
   searchInput.value = searchInput.value.replace(/[^0-9]/g, '');
 });
+
+// === INTERACTIVE EXCEL VIEWER LOGIC ===
+
+// DOM Elements for Excel Viewer
+const excelModal = document.getElementById("excel-modal");
+const modalTitle = document.getElementById("modal-title");
+const modalSubtitle = document.getElementById("modal-subtitle");
+const modalCloseBtn = document.getElementById("modal-close-btn");
+const modalSearchInput = document.getElementById("modal-search-input");
+const modalDownloadLink = document.getElementById("modal-download-link");
+const modalLoader = document.getElementById("modal-loader");
+const modalErrorMessage = document.getElementById("modal-error-message");
+const modalErrorDownload = document.getElementById("modal-error-download");
+const excelDataTable = document.getElementById("excel-data-table");
+const excelTableHeader = document.getElementById("excel-table-header");
+const excelTableBody = document.getElementById("excel-table-body");
+const modalSearchEmpty = document.getElementById("modal-search-empty");
+
+let currentExcelData = []; // Store parsed row data for filtering
+
+// Open Excel Viewer
+async function openExcelViewer(jurusan) {
+  const fileName = `Data Peserta Remedial_${jurusan}.xlsx`;
+  
+  // Reset modal state
+  modalTitle.textContent = `Daftar Peserta Remedial ${jurusan}`;
+  modalSubtitle.textContent = "Memuat data excel...";
+  modalSearchInput.value = "";
+  excelTableHeader.innerHTML = "";
+  excelTableBody.innerHTML = "";
+  
+  modalLoader.classList.remove("hidden");
+  modalErrorMessage.classList.add("hidden");
+  excelDataTable.classList.add("hidden");
+  modalSearchEmpty.classList.add("hidden");
+  
+  // Set download links
+  modalDownloadLink.href = fileName;
+  modalErrorDownload.href = fileName;
+  
+  // Show modal overlay
+  excelModal.classList.remove("hidden");
+  document.body.style.overflow = "hidden"; // Disable background scrolling
+
+  try {
+    const response = await fetch(fileName);
+    if (!response.ok) {
+      throw new Error(`Fetch failed with status ${response.status}`);
+    }
+    
+    const arrayBuffer = await response.arrayBuffer();
+    const data = new Uint8Array(arrayBuffer);
+    const workbook = XLSX.read(data, { type: "array" });
+    
+    // Parse first sheet
+    const sheetName = workbook.SheetNames[0];
+    const worksheet = workbook.Sheets[sheetName];
+    const rawRows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: "" });
+    
+    if (rawRows.length === 0) {
+      throw new Error("Excel file is empty");
+    }
+
+    // Process rows
+    let headerRowIndex = 0;
+    let subtitleParts = [];
+    
+    // Find the header row (typically row 2, e.g. ["No.", "NIS"] or containing "No" & "NIS")
+    for (let i = 0; i < rawRows.length; i++) {
+      const row = rawRows[i];
+      const hasNo = row.some(cell => typeof cell === 'string' && cell.toLowerCase().startsWith('no'));
+      const hasNis = row.some(cell => typeof cell === 'string' && cell.toLowerCase() === 'nis');
+      
+      if (hasNo && hasNis) {
+        headerRowIndex = i;
+        break;
+      } else {
+        // Collect pre-header texts for subtitle
+        const textVal = row.filter(cell => cell !== null && cell !== "").join(" - ");
+        if (textVal) {
+          subtitleParts.push(textVal);
+        }
+      }
+    }
+    
+    // Update subtitle
+    if (subtitleParts.length > 0) {
+      modalSubtitle.textContent = subtitleParts.join(" | ");
+    } else {
+      modalSubtitle.textContent = `File: ${fileName}`;
+    }
+    
+    // Header cells
+    const headerRow = rawRows[headerRowIndex];
+    headerRow.forEach(headerText => {
+      const th = document.createElement("th");
+      th.textContent = headerText || "";
+      excelTableHeader.appendChild(th);
+    });
+    
+    // Data rows
+    currentExcelData = [];
+    for (let i = headerRowIndex + 1; i < rawRows.length; i++) {
+      const row = rawRows[i];
+      // Skip completely empty rows
+      if (row.every(cell => cell === null || cell === "")) continue;
+      currentExcelData.push(row);
+    }
+    
+    renderExcelTable(currentExcelData);
+    
+    modalLoader.classList.add("hidden");
+    excelDataTable.classList.remove("hidden");
+    
+  } catch (error) {
+    console.error("Error reading excel file:", error);
+    modalLoader.classList.add("hidden");
+    modalErrorMessage.classList.remove("hidden");
+  }
+}
+
+// Render Table Rows
+function renderExcelTable(rows) {
+  excelTableBody.innerHTML = "";
+  
+  if (rows.length === 0) {
+    modalSearchEmpty.classList.remove("hidden");
+    return;
+  }
+  
+  modalSearchEmpty.classList.add("hidden");
+  
+  rows.forEach(rowData => {
+    const tr = document.createElement("tr");
+    rowData.forEach((cellVal, colIdx) => {
+      const td = document.createElement("td");
+      td.textContent = cellVal !== undefined ? cellVal : "";
+      
+      // Highlight the NIS column specifically
+      if (colIdx === 1) {
+        td.style.fontWeight = "600";
+        td.style.color = "var(--text-primary)";
+      }
+      
+      tr.appendChild(td);
+    });
+    excelTableBody.appendChild(tr);
+  });
+}
+
+// Close Excel Viewer Modal
+function closeExcelViewer() {
+  excelModal.classList.add("hidden");
+  document.body.style.overflow = ""; // Restore background scrolling
+}
+
+// Modal Search Filter Logic
+modalSearchInput.addEventListener("input", (e) => {
+  const query = e.target.value.toLowerCase().trim();
+  
+  if (!query) {
+    renderExcelTable(currentExcelData);
+    return;
+  }
+  
+  // Filter row content
+  const filtered = currentExcelData.filter(row => {
+    return row.some(cell => {
+      if (cell === null || cell === undefined) return false;
+      return String(cell).toLowerCase().includes(query);
+    });
+  });
+  
+  renderExcelTable(filtered);
+});
+
+// Modal close button event listener
+modalCloseBtn.addEventListener("click", closeExcelViewer);
+
+// Close on escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !excelModal.classList.contains("hidden")) {
+    closeExcelViewer();
+  }
+});
+
+// Close modal when clicking outside the container
+excelModal.addEventListener("click", (e) => {
+  if (e.target === excelModal) {
+    closeExcelViewer();
+  }
+});

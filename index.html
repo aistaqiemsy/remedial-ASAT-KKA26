@@ -211,6 +211,120 @@
       </div>
     </section>
 
+    <!-- Section Data & Peserta Remedial -->
+    <section class="excel-section">
+      <h3 class="subsection-title">Data & Peserta Remedial</h3>
+      <div class="excel-grid">
+        <!-- Card DKV -->
+        <div class="glass-panel excel-card" onclick="openExcelViewer('DKV')">
+          <div class="excel-card-header blue">
+            <svg class="excel-card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+            </svg>
+            <span class="excel-badge badge-blue">DKV</span>
+          </div>
+          <div class="excel-card-content">
+            <h4>Data Peserta Remedial DKV</h4>
+            <p>Buka dan cari daftar 33 siswa Desain Komunikasi Visual yang terjadwal remedial.</p>
+            <div class="excel-actions">
+              <button class="action-btn-view">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="btn-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                Lihat Detail
+              </button>
+              <a href="Data Peserta Remedial_DKV.xlsx" class="action-btn-download" download onclick="event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="btn-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Unduh
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card TJKT -->
+        <div class="glass-panel excel-card" onclick="openExcelViewer('TJKT')">
+          <div class="excel-card-header violet">
+            <svg class="excel-card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+            <span class="excel-badge badge-violet">TJKT</span>
+          </div>
+          <div class="excel-card-content">
+            <h4>Data Peserta Remedial TJKT</h4>
+            <p>Buka dan cari daftar 99 siswa Teknik Jaringan Komputer & Telekomunikasi yang terjadwal remedial.</p>
+            <div class="excel-actions">
+              <button class="action-btn-view">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="btn-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                Lihat Detail
+              </button>
+              <a href="Data Peserta Remedial_TJKT.xlsx" class="action-btn-download" download onclick="event.stopPropagation();">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="btn-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Unduh
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Excel Viewer Modal Overlay -->
+    <div id="excel-modal" class="modal-overlay hidden">
+      <div class="glass-panel modal-container">
+        <div class="modal-header">
+          <div class="modal-title-group">
+            <h3 id="modal-title">Daftar Peserta Remedial DKV</h3>
+            <p id="modal-subtitle" class="modal-subtitle">Memuat data excel...</p>
+          </div>
+          <button id="modal-close-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-controls">
+          <div class="modal-search-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="modal-search-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" id="modal-search-input" placeholder="Cari NIS..." autocomplete="off">
+          </div>
+          <a id="modal-download-link" href="#" class="primary-btn modal-download-btn" download>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="btn-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            Unduh Excel
+          </a>
+        </div>
+        <div class="modal-table-container">
+          <div id="modal-loader" class="loader-spinner">
+            <div class="spinner"></div>
+            <span>Membaca data Excel...</span>
+          </div>
+          <div id="modal-error-message" class="modal-error hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="error-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <p>Tidak dapat memuat spreadsheet secara interaktif (masalah CORS browser lokal).</p>
+            <p class="error-sub">Silakan gunakan tombol unduh di bawah ini untuk melihat data secara langsung.</p>
+            <a id="modal-error-download" href="#" class="primary-btn" download>Unduh File Excel</a>
+          </div>
+          <table id="excel-data-table" class="excel-table hidden">
+            <thead>
+              <tr id="excel-table-header"></tr>
+            </thead>
+            <tbody id="excel-table-body"></tbody>
+          </table>
+          <div id="modal-search-empty" class="modal-search-empty hidden">
+            <p>Siswa dengan NIS tersebut tidak ditemukan dalam daftar remedial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
     <!-- Educational & Guidelines Section -->
@@ -376,6 +490,7 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
