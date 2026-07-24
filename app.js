@@ -689,7 +689,7 @@ const studentDatabase = [
     nilaiAkhir: 78.1,
     kategoriEtika: "Murni Murid",
     kategoriPrompt: "Murni Murid",
-    catatanDeteksi: "Bagian 1 ditulis secara orisinal dengan bahasa yang mengalir. Manfaat dan risiko AI dijelaskan dengan baik dan relevan. Profesi desainer grafis yang memanfaatkan AI sangat relevan dengan DKV Multimedia. Bagian 2 membuat prompt yang cukup spesifik meski tanpa format RTCC ketat. Evaluasi menjelaskan perubahan spesifik (lebih singkat, tambah contoh relevan DKV).",
+    catatanDeteksi: "Bagian 1 ditulis secara orisinal dengan bahasa yang mengalir. Manfaat dan risiko AI dijelaskan dengan baik dan relevan. Profesi desainer grafis yang memanfaatkan AI sangat relevan dengan DKV Multimedia. Bagian 2 membuat prompt yang cukup spesifik meski tanpa format RTCC ketat. Evaluasi menjelaskan perubahan spesifik (lebih singkat, tambah contoh relevan DKV). ⚠️ Catatan Kemiripan: Prompt terdeteksi memiliki kesamaan persis dengan siswa lain (DKV X-1). Disarankan untuk mengembangkan instruksi prompt secara mandiri pada tugas berikutnya.",
     feedback: "Pemahaman teori etika AI kamu sudah baik dan ditulis secara mandiri. Cara penggunaan AI yang etis dijabarkan dengan jelas. Prompt yang kamu buat cukup spesifik sesuai jurusan DKV Multimedia. Evaluasi yang meminta konten lebih ringkas dan contoh yang relevan menunjukkan pemikiran kritis yang baik. Pertahankan semangat belajarmu!"
   },
   {
@@ -1575,7 +1575,7 @@ const studentDatabase = [
     nilaiAkhir: 78.2,
     kategoriEtika: "Murni Murid",
     kategoriPrompt: "Murni Murid",
-    catatanDeteksi: "Bagian 1 menjelaskan cara kerja AI berbasis data teks dengan lugas. Prompt materi DKV disusun runtut.",
+    catatanDeteksi: "Bagian 1 menjelaskan cara kerja AI berbasis data teks dengan lugas. Prompt materi DKV disusun runtut. ⚠️ Catatan Kemiripan: Prompt terdeteksi sama persis dengan siswa lain (DKV X-2). Disarankan untuk merumuskan perintah AI dengan gaya dan topiknya sendiri ke depannya.",
     feedback: "Pemahaman etika AI kamu sudah sangat baik. Terus kembangkan keterampilan merancang prompt visual untuk proyek DKV."
   },
   {
@@ -1809,7 +1809,7 @@ const studentDatabase = [
     nilaiAkhir: 77.8,
     kategoriEtika: "Murni Murid",
     kategoriPrompt: "Murni Murid",
-    catatanDeteksi: "Penjelasan etika AI baik dan mandiri. Prompt materi presentasi IT sesuai konteks TJKT.",
+    catatanDeteksi: "Penjelasan etika AI baik dan mandiri. Prompt materi presentasi IT sesuai konteks TJKT. ⚠️ Catatan Kemiripan: Prompt dan evaluasi terdeteksi identik dengan teman satu kelas (TJKT X-3). Sangat disarankan merumuskan prompt dan penilaian revisinya secara mandiri agar kemampuan berpikir kritis semakin terasah.",
     feedback: "Pemahaman etika penggunaan AI sudah baik. Usahakan memperjelas bagian evaluasi hasil AI pada tugas selanjutnya."
   },
   {
@@ -1822,7 +1822,7 @@ const studentDatabase = [
     nilaiAkhir: 77.8,
     kategoriEtika: "Murni Murid",
     kategoriPrompt: "Murni Murid",
-    catatanDeteksi: "Menjelaskan bahaya halusinasi data AI dan pentingnya verifikasi. Prompt materi TJKT disusun baik.",
+    catatanDeteksi: "Menjelaskan bahaya halusinasi data AI dan pentingnya verifikasi. Prompt materi TJKT disusun baik. ⚠️ Catatan Kemiripan: Prompt dan evaluasi terdeteksi identik dengan teman satu kelas (TJKT X-3). Sangat disarankan merumuskan prompt dan penilaian revisinya secara mandiri agar kemampuan berpikir kritis semakin terasah.",
     feedback: "Analisis etika AI kamu sangat bagus, terutama kesadaran untuk memverifikasi data. Prompt engineering sudah cukup baik."
   },
   {
@@ -1978,8 +1978,21 @@ function performSearch(nis) {
     statusEtika.innerHTML = getStatusSymbol(student.kategoriEtika);
     statusPrompt.innerHTML = getStatusSymbol(student.kategoriPrompt);
     
-    analysisNotesText.textContent = student.catatanDeteksi;
-    
+    // Parse catatan for similarity flag
+    const simBox = document.getElementById("similarity-warning-box");
+    const simText = document.getElementById("similarity-note-text");
+    const simFlag = "⚠️ Catatan Kemiripan: ";
+    if (student.catatanDeteksi && student.catatanDeteksi.includes(simFlag)) {
+      const parts = student.catatanDeteksi.split(simFlag);
+      analysisNotesText.textContent = parts[0].trim();
+      simText.textContent = parts[1].trim();
+      simBox.classList.remove("hidden");
+    } else {
+      analysisNotesText.textContent = student.catatanDeteksi;
+      simBox.classList.add("hidden");
+      simText.textContent = "";
+    }
+
     // Set widths for animated progress bars (with slight timeout to trigger transition)
     barEtika.style.width = "0%";
     barPrompt.style.width = "0%";

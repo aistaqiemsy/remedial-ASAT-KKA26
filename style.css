@@ -1430,3 +1430,53 @@ body {
     justify-content: center;
   }
 }
+
+/* ==========================================
+   SIMILARITY WARNING BOX
+   ========================================== */
+.similarity-box {
+  margin-top: 1rem;
+  border: 1.5px solid rgba(251, 191, 36, 0.5);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.07) 0%, rgba(251, 191, 36, 0.05) 100%);
+  padding: 1rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.similarity-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #f59e0b, #d97706);
+  border-radius: 4px 0 0 4px;
+}
+
+.similarity-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fbbf24;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.65rem;
+}
+
+.sim-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  color: #f59e0b;
+}
+
+.similarity-box p {
+  font-size: 0.875rem;
+  color: rgba(253, 230, 138, 0.9);
+  line-height: 1.65;
+  margin: 0;
+}
+
